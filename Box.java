@@ -1,35 +1,53 @@
-public class Box {
+//The <T> is a generic type
+public class Box<T> {
 
   private T contents;
   private boolean isFull;
 
   // Make a new empty box
   public Box(){
+	  super();
+	  this.isFull = false;
   }
 
   // Make a new box pre-filled with contents
-  public Box(){
+  public Box(T t){
+	  super();
+	  contents = t;
+	  isFull = true;
   }
 
   /**
    * Check the contents of the box
+   * @return Whatever is in the box
    */
-  public getContents(){
+  public T getContents(){
+	  return contents;
   }
 
   /**
    * Tell whether the box is full or not
+   * @return true the box is full
    */
-  public isFull(){
+  public boolean isFull(){
+	  return isFull;
   }
 
   /**
-   * Empty out the box, and give back hatever was in it
+   * Empty out the box, and give back whatever was in it
+   * @return what was in the box
    */
-  public empty(){
+  public T empty(){
+	  isFull = false;
+	  T save = contents;
+	  contents = null;
+	  return save;
   }
 
   public String toString(){
+	  if(isFull)
+		return contents.toString();
+	  return "empty";
   }
 
   public static void main(String[] args){
