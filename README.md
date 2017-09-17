@@ -5,13 +5,7 @@ A simple data structure primarily for instructional purposes.
 
 Overview
 --------
-   ___________
-  /          /|
- /          / |
-/__________/  |
-|          |  /
-|          | /
-|__________|/
+:package:
 
 
 Usage
@@ -37,12 +31,12 @@ Tests
 
 Todo List
 ---------
-1. Implement all the methods
-2. Update all the javadoc
-3. Implement TODOs in main program
-4. Complete preceding sections of this README
-5. Remove this todo list
-6. (optional) Make an even more interesting main program
+1. [X] Implement all the methods
+2. [X] Update all the javadoc
+3. [X] Implement TODOs in main program
+4. [X] Complete preceding sections of this README
+5. [ ] Remove this todo list
+6. [ ] (optional) Make an even more interesting main program
 
 
 
